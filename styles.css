@@ -2,24 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #26DADD;
+    background-color: #49BEB7;
 }
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+  }
 
-#draggable {
-    width: 200px;
-    height: 20px;
+/*
+#FCF9EA beige
+#BADFDB light teal
+#49BEB7 teal;
+#FF8A5C salmon
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+
+*/
+.dropzone {
+    width: 15%;
+    height: calc(100vh - 65px);
+    position: relative;
+    top: 55px;
+    background: #BADFDB;
+    margin-left: 20px;
     text-align: center;
-    background: white;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(74, 170, 162);
     border-radius: 5px;
   }
-  body {
+h2 {
+    position: relative;
+    top: -45px;
+    color: #282828;
+}
+#draggable {
+    width: 220px;
+    height: 40px;
+    background: #FCF9EA; /* #FF8A5C; */
+    border-radius: 5px;
+    margin-top: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    -webkit-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.6);
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.6);
   }
-  .dropzone {
-    width: 20%;
-    height: 100vh;
-    background: rgb(38, 125, 255);
-    margin: 10px;
-    padding: 10px;
+  #draggable:hover {
+    background: rgb(231, 224, 185);
   }

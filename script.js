@@ -9,6 +9,8 @@ var dragged;
     
 // }, false);
 
+/////**** need to wrap the for loop into an executable function so when a student name is added, this updates automatically */
+
 for(let boxesCount = 0; boxesCount < boxes.length; boxesCount++){
     /////dragstart fires when a draggable element is clicked on an dragged/////
     boxes[boxesCount].addEventListener("dragstart", function(event) {
@@ -39,7 +41,7 @@ document.addEventListener("dragover", function(event) {
 document.addEventListener("dragenter", function(event) {
   // highlight potential drop target when the draggable element enters it
   if (event.target.className == "dropzone") {
-    event.target.style.background = "blue";
+    event.target.style.background = "rgb(74, 170, 162)";
   }
 
 }, false);
